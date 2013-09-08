@@ -1,0 +1,12 @@
+     try{     
+	String db="jdbc:odbc:s1";
+	String un="scott";
+	String pass="tiger";
+        Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+         Connection conn=DriverManager.getConnection(db,un,pass); 
+	Statement stmt=conn.createStatement();
+	System.out.println("Connection to 'mark' succeeded!");
+           }
+           catch(Exception e)
+      {               System.out.println("Connection to failed@@@@");
+           }
